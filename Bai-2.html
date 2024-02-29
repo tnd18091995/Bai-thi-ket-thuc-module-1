@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function insertNumberToArray(arr, a, b) {
+        if (b < 0 || b > arr.length) {
+            console.log(arr);
+            return arr;
+        }
+        arr.splice(b, 0, a);
+        console.log(arr);
+        return arr;
+    }
+    insertNumberToArray([1, 2, 3], 1, 3);
+</script>
+</body>
+</html>
